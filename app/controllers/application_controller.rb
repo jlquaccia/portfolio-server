@@ -10,4 +10,8 @@ class ApplicationController < ActionController::Base
   def options
     head :status => 200, :'Access-Control-Allow-Headers' => 'accept, content-type'
   end
+
+  def welcome
+    render text: "<h1>Hello</h1><p>You've reached the backend of the jq2016Revamp project</p><p>You're not supposed to see this..</p>"
+  end
 end
